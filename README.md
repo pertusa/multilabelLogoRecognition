@@ -6,13 +6,13 @@ This repository is for the paper ‘Multi-Label Logo Recognition and Retrieval b
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-## Prerequisites
+##Prerequisites
 •	Python
 •	Tensorflow with NVIDIA GPU or CPU
 •	OpenCV
 •	numpy
 
-## Training
+##Training
 For a given dataset, we train the network and save weights file (if arg load==false) into WEIGHTS folder. If arg save==true, we save NC in a characteristic vector file for train set and test set into the NC folder. To train images stored in DATA folder, you must specify the csv file with the parameter -csv and  select the characteristic type to train by the parameter -type when calling py_logos.py
 **Classification type**: maincat, subcat, color, shape, text, mainsec, ae
 
@@ -26,7 +26,7 @@ You can download the weights from trained models, unzip and put them into WEIGHT
 For example:
 >	python py_logos.py -csv salida.csv -img DATA -type maincat --load --aug
 
-## kNN classification
+##kNN classification
  To classify images in a folder DATA, you must  specify the NC of train file with the parameter -train, the NC of test file with the parameter -test, and select the characteristic type with the parameter -type when calling py_logos_knn.py.
  
 For example:
