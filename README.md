@@ -1,4 +1,4 @@
-# multilabelLogoRecognition
+# Multi-Label Logo Recognition
 
 This code is authored by Maria Luisa Bernabéu, Javier Gallego and Antonio Pertusa
 
